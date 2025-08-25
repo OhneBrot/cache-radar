@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cache-Radar</title>
+  <!-- Link to the web app manifest for PWA support -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Home container holding the primary menu. The `active` class is toggled via JavaScript to show or hide sections. -->
+  <div id="home-container" class="container active">
+    <h1 class="app-title">Cache-Radar</h1>
+    <p class="subtitle">Die App, die dir hilft, reich zu werden</p>
+
+    <button class="menu-btn" onclick="navigateTo('earn-container')">💰 Geld verdienen</button>
+    <button class="menu-btn" onclick="navigateTo('job-container')">🤝 Job/Deal annehmen</button>
+    <button class="menu-btn" onclick="navigateTo('hacks-container')">📊 Cash-Hacks &amp; Rechner</button>
+    <button class="menu-btn" onclick="navigateTo('community-container')">👥 Community</button>
+
+    <button class="premium-btn">✨ Premium freischalten</button>
+  </div>
+
+  <!-- Earn container shows content for earning money. Hidden by default. -->
+  <div id="earn-container" class="container">
+    <h2>💰 Geld verdienen</h2>
+    <p>Hier findest du direkte Wege, um Cash zu machen.</p>
+    <button class="back-btn" onclick="navigateTo('home-container')">⬅ Zurück</button>
+  </div>
+
+  <!-- Job container lists jobs or deals available. Hidden by default. -->
+  <div id="job-container" class="container">
+    <h2>🤝 Job/Deal annehmen</h2>
+    <p>Direkt verfügbare Jobs und Deals in deiner Nähe.</p>
+    <button class="back-btn" onclick="navigateTo('home-container')">⬅ Zurück</button>
+  </div>
+
+  <!-- Hacks container provides calculators and tips. Hidden by default. -->
+  <div id="hacks-container" class="container">
+    <h2>📊 Cash-Hacks &amp; Rechner</h2>
+    <p>Rechne deine Szenarien durch und entdecke geheime Tricks.</p>
+    <button class="back-btn" onclick="navigateTo('home-container')">⬅ Zurück</button>
+  </div>
+
+  <!-- Community container for user interactions. Hidden by default. -->
+  <div id="community-container" class="container">
+    <h2>👥 Community</h2>
+    <p>Teile deine besten Tipps und entdecke neue Wege zu Cash.</p>
+    <button class="back-btn" onclick="navigateTo('home-container')">⬅ Zurück</button>
+  </div>
+
+  <!-- Application logic -->
+  <script src="app.js"></script>
+</body>
+</html>
