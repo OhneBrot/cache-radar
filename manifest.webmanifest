@@ -1,0 +1,9 @@
+{
+  "name": "Cache‑Radar",
+  "short_name": "CacheRadar",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0B2F1F",
+  "theme_color": "#2ECC71",
+  "description": "Die App, die dir hilft, reich zu werden"
+}
