@@ -1,0 +1,89 @@
+/* Global styles for the Cache‑Radar PWA */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0B2F1F;
+  color: #EAEAEA;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container base style: sections are hidden by default */
+.container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Shows the active container */
+.container.active {
+  display: flex;
+}
+
+/* Title styling */
+.app-title {
+  font-size: 2rem;
+  color: #2ECC71;
+  margin-bottom: 5px;
+}
+
+/* Subtitle styling */
+.subtitle {
+  font-size: 1rem;
+  color: #A9D6A3;
+  margin-bottom: 20px;
+}
+
+/* Styles for the main menu buttons */
+.menu-btn {
+  background: linear-gradient(145deg, #1A472A, #2ECC71);
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.1rem;
+  color: #fff;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.menu-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Premium upgrade button */
+.premium-btn {
+  background: #FFD700;
+  color: #0B2F1F;
+  font-weight: bold;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 12px;
+  width: 100%;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.premium-btn:hover {
+  background: #E6C200;
+  transform: scale(1.05);
+}
+
+/* Back button for sub‑screens */
+.back-btn {
+  background: #2ECC71;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 30px;
+}
