@@ -14,3 +14,12 @@ function navigateTo(containerId) {
     target.classList.add('active');
   }
 }
+
+// Register the service worker for offline capability
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(err => {
+      console.error('Service Worker registration failed:', err);
+    });
+  });
+}
